@@ -1,0 +1,59 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+      "logo": {
+        "source": "/home/ian/.config/fastfetch/logo.txt",
+        "position": "top",
+        "type": "file",
+        "color": {"1": "#C8712D"},
+       	"padding": {
+		"top": 1,
+    		"left": 7,
+		"right": 0,
+        },
+    	},
+    	"display": {
+        	"separator": " • ",
+        	"color": {
+            	"keys": "yellow",
+            	"title": "red",
+        },
+        "size": {
+            "ndigits": 0,
+            "maxPrefix": "GB"
+        },
+    	},
+    
+	"modules": [
+    	"break",
+    	{
+            "type": "os",
+            "key": "sys",
+            "format": "Void Linux",
+    	},
+   	 {
+            "type": "wm",
+            "key": "win",
+            "format": "i3",
+    	},
+    	{
+            "type": "shell",
+            "key": "shl",
+            "format": "bash",
+    	},
+    	{
+            "type": "cpu",
+            "key": "cpu",
+            "format": "AMD Ryzen 5 5500U",
+    	},
+    	{
+            "type": "gpu",
+            "key": "gpu",
+            "format": "AMD Ryzen Lucienne",
+    	},
+    	{
+            "type": "memory",
+            "key": "mem",
+    	},
+    		"title",
+  	]
+}
