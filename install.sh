@@ -11,7 +11,7 @@
 echo 'Starting base installations and configs...'
 
 # Packages to be installed:
-sudo xbps-install -y basedevel vim grub efibootmgr
+sudo xbps-install -yu base-devel
 
 # Install display server, allow it to start
 sudo xbps-install -Sy xorg xinit
