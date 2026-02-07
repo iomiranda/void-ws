@@ -14,7 +14,7 @@ echo 'Starting base installations and configs...'
 sudo xbps-install -yu base-devel
 
 # Install display server, allow it to start
-sudo xbps-install -Sy xorg xinit
+sudo xbps-install -Syu xorg xinit
 
 # Install wm and basic applications
 sudo xbps-install -Sy i3 i3status alacritty firefox dmenu neovim
@@ -42,6 +42,7 @@ sudo xbps-install -Sy starship
 sudo xbps-install -Sy iwd
 
 # Install media player
+# Needed for firefox
 sudo xbps-install -Sy ffmpeg
 
 # Install pipewire
