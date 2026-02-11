@@ -1,0 +1,23 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
+# Package Manager 
+alias xi='sudo xbps-install'
+alias xr='sudo xbps-remove'
+
+# Mounting
+alias gotomnt='cd /run/media/ian/ ; ls'
+alias mountdrive='udisksctl mount -b'
+alias umountdrive='udisksctl unmount -b'
+
+# Power
+alias shutdown='sudo shutdown -h now'
+alias restart='sudo shutdown -r now'
+
+# Prompts
+#PS1='[\u@\h \W]\$ '
+eval "$(starship init bash)"

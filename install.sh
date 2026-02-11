@@ -45,8 +45,12 @@ sudo xbps-install -Sy iwd
 # Needed for firefox
 sudo xbps-install -Sy ffmpeg
 
-# Install pipewire
-# Figure this out...
+# Install Pulse Audio
+# Make sure dbus is installed
+sudo xbps-install -Sy pulseaudio
+
+# Install UDisks2
+
 
 #-----------------------------------------------------------------
 #               	    +ADDITIONAL CONFIGS
