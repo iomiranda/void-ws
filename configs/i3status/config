@@ -1,14 +1,23 @@
 general {
-        colors = true
+        colors = false
         interval = 5
 }
 
+order += "volume master"
 #order += "disk /"
 order += "wireless _first_"
-order += "battery 0"
-order += "memory"
-order += "load"
+#order += "memory"
+#order += "load"
 order += "tztime local"
+
+
+
+volume master {
+    format = "󰕾 %volume"
+    format_muted = "󰝟 muted"
+    device = "default"
+}
+
 
 wireless _first_ {
         format_up = " 󰖩 "
