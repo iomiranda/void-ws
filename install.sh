@@ -17,7 +17,7 @@ sudo xbps-install -yu base-devel
 sudo xbps-install -Syu xorg xinit
 
 # Install wm and basic applications
-sudo xbps-install -Sy i3 i3status alacritty firefox dmenu neovim
+sudo xbps-install -Sy i3 i3status alacritty firefox dmenu vim
 
 # Configure xinitrc
 # Add execute i3wm with startx
@@ -37,9 +37,10 @@ sudo xbps-install -Sy feh
 sudo xbps-install -Sy starship
 
 # Install iwd, use iwctl
+# Install impala, make connections easier
 # This allows for connection to 5Ghz wifi
 # Before running, remove wpa_supplicant service
-sudo xbps-install -Sy iwd
+sudo xbps-install -Sy iwd impala
 
 # Install media player
 # Needed for firefox
@@ -50,12 +51,18 @@ sudo xbps-install -Sy ffmpeg
 sudo xbps-install -Sy pulseaudio
 
 # Install UDisks2
+sudo xbps-install -Sy udisks2
+
+# Install dunst
+# Removes error when mounting drive using udisks2
+sudo xbps-install -Sy dunst
+echo 'dunst &' >> .xinitrc
 
 
 #-----------------------------------------------------------------
 #               	    +ADDITIONAL CONFIGS
 #-----------------------------------------------------------------
-# Copy from repo/configs directory, Paste to local destination
-
+# Enable services:
+# iwd, dbus (audio)
 
 
