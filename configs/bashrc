@@ -19,5 +19,4 @@ alias shutdown='sudo shutdown -h now'
 alias restart='sudo shutdown -r now'
 
 # Prompts
-#PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
