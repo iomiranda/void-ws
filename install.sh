@@ -63,6 +63,10 @@ echo 'dunst &' >> .xinitrc
 #               	    +ADDITIONAL CONFIGS
 #-----------------------------------------------------------------
 # Enable services:
-# iwd, dbus (audio)
 
+# Enable dbus
+sudo ln -s /etc/sv/dbus /var/service
+
+# Enable iwd
+sudo ln -s /etc/sv/iwd /var/service
 
