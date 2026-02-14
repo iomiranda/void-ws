@@ -1,4 +1,6 @@
 #!/bin/bash
+# Credits to BreadOnPenguins
+# https://github.com/BreadOnPenguins/scripts/blob/master/shortcuts-menus/sys
 
 choice=$(echo -e "kill\nshutdown\nreboot\nzzz\nlogout\ncancel" | dmenu -i -p "system ctrl > " -fn "JetBrainsMonoNL Nerd Font-12" -nb "#CCCCCC" -nf "#101010" -sb "#101010" -sf "#CCCCCC")
 
