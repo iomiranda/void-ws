@@ -10,5 +10,5 @@ Terminal: alacritty
 
 Prerequisite:
 1. User is in wheel group, and wheel group has access to execute any commands.
-   \a. Edit visudo file. If configurations are not being applied, check for /etc/sudoers.d
-   \b. If /etc/sudoers.d exist, remove it.
+   a. Edit visudo file. If configurations are not being applied, check for /etc/sudoers.d
+   b. If /etc/sudoers.d exist, remove it.
