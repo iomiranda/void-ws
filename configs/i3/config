@@ -20,7 +20,7 @@ font pango:JetBrainsMonoNL Nerd Font 10
 exec --no-startup-id dex --autostart --environment i3
 
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill ~/Wallpapers/eink.jpg
+exec --no-startup-id feh --bg-fill ~/Wallpapers/eink_dark.jpg
 
 # Window border
 default_border pixel 4
@@ -32,6 +32,10 @@ gaps outer 6
 
 # Focused
 client.focused #000000 #000000 #000000 #000000
+
+# Open LocalSend
+bindsym $mod+Shift+s exec --no-startup-id ~/.local/share/localsend_app/*AppImage
+
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -204,10 +208,10 @@ bar {
 	position top
         status_command i3status
 	colors {
-		background #CCCCCC
+		background #101010
 		separator #101010
-		statusline #101010
-		focused_workspace #101010 #101010 #CCCCCC
-		inactive_workspace #CCCCCC #CCCCCC #101010
+		statusline #CCCCCC
+		inactive_workspace #101010 #101010 #CCCCCC
+		focused_workspace #CCCCCC #CCCCCC #101010
 	}
 }
