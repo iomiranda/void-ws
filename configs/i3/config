@@ -57,7 +57,7 @@ bindsym $mod+Shift+s exec --no-startup-id ~/.local/share/localsend_app/*AppImage
 #bindsym $mod+space exec --no-startup-id dmenu_run -p "run > " -fn "JetBrainsMonoNL Nerd Font-12" -nb "#CCCCCC" -nf "#101010"  -sb "#101010" -sf "#CCCCCC"
 
 # Open Launcher
-bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --dmenu "dmenu -p 'run > ' -fn 'JetBrainsMonoNL Nerd Font-12' -nb '#CCCCCC' -nf '#101010'  -sb '#101010' -sf '#CCCCCC'"
+bindsym $mod+space exec --no-startup-id j4-dmenu-desktop --no-generic --dmenu "dmenu -p 'run > ' -fn 'JetBrainsMonoNL Nerd Font-12' -nb '#CCCCCC' -nf '#101010'  -sb '#101010' -sf '#CCCCCC'"
 
 # Open system menu
 bindsym $mod+p exec --no-startup-id ~/Scripts/sys-script.sh
