@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/impala
+Name=network
+Type=Application
+Terminal=true

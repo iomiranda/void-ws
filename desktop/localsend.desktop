@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=/home/ian/.local/share/localsend_app/LocalSend-1.17.0-linux-x86-64.AppImage
+Name=localsend
+Type=Application
