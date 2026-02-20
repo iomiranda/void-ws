@@ -50,8 +50,6 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
 # |_____/_/\_\___|\___|\__,_|\__\__,_|_.__/|_|\___||___/
 # 
 # ======================================================                                                     
-# Open LocalSend
-bindsym $mod+Shift+s exec --no-startup-id ~/.local/share/localsend_app/*AppImage
 
 # Open dmenu
 #bindsym $mod+space exec --no-startup-id dmenu_run -p "run > " -fn "JetBrainsMonoNL Nerd Font-12" -nb "#CCCCCC" -nf "#101010"  -sb "#101010" -sf "#CCCCCC"
