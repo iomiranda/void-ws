@@ -5,7 +5,7 @@
 This repo is slowly a work in progress. Slowly updating as I work on my devices. 
 
 ### About:
-A collection of my dot files for my devices. Used during install/set-up process and back-up for configurations.
+A collection of my dot files, used during install/set-up process and back-up for configurations.
 
 ### Set-Up:
 - __Operating System:__ _Void Linux_
