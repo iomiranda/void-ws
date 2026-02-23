@@ -15,8 +15,8 @@ alias mountdrive='udisksctl mount -b'
 alias umountdrive='udisksctl unmount -b'
 
 # Power
-alias shutdown='sudo shutdown -h now'
-alias restart='sudo shutdown -r now'
+alias shutdown='sudo poweroff'
+alias restart='sudo reboot'
 
 # Prompts
 eval "$(starship init bash)"
