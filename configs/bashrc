@@ -9,14 +9,30 @@ alias ls='ls --color=auto'
 alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove'
 
+# DWM
+alias cdwm='vim ~/dwm/config.def.h'
+alias mdwm='cd ~/dwm; sudo rm config.h ; sudo make clean install; cd -'
+
+# Fastfetch
+alias fetch='fastfetch'
+
 # Mounting
 alias gotomnt='cd /run/media/ian/ ; ls'
 alias mountdrive='udisksctl mount -b'
 alias umountdrive='udisksctl unmount -b'
 
+# Server
+alias connectserver='ssh -p 26 user@192.168.0.92'
+
 # Power
-alias shutdown='sudo poweroff'
-alias restart='sudo reboot'
+alias shutdown='sudo shutdown -h now'
+alias restart='sudo shutdown -r now'
+
+# Dungeons & Dragons
+alias rundnd='dart run $HOME/DND/morning-princess/bin/morning_princess.dart'
+
+# Paths
+export PATH="$PATH:/usr/lib/dart-sdk/bin"
 
 # Prompts
 eval "$(starship init bash)"

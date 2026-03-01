@@ -1,15 +1,13 @@
 #!/bin/bash
-# Credits to BreadOnPenguins
-# https://github.com/BreadOnPenguins/scripts/blob/master/shortcuts-menus/sys
 
-choice=$(echo -e "kill\nshutdown\nreboot\nzzz\nlogout\ncancel" | dmenu -i -p "system ctrl > " -fn "JetBrainsMonoNL Nerd Font-12" -nb "#CCCCCC" -nf "#101010" -sb "#101010" -sf "#CCCCCC")
+choice=$(echo -e "kill\nshutdown\nreboot\nzzz\nlogout\ncancel" | dmenu -i -l 5 -p "power menu > " -fn "JetBrainsMonoNL Nerd Font-12")
 
 case $choice in
-    kill) ps -u "$USER" -o pid,comm,%cpu,%mem | dmenu -i -l 10 -p kill: -fn "JetBrainsMonoNL Nerd Font-12" -nb "#CCCCCC" -nf "#101010" -sb "#101010" -sf "#CCCCCC" | awk '{print $1}' | xargs -r kill ;;
+    kill) ps -u "$USER" -o pid,comm,%cpu,%mem | dmenu -i -l 10 -p kill: -fn "JetBrainsMonoNL Nerd Font-12" | awk '{print $1}' | xargs -r kill ;;
     shutdown)sudo poweroff ;;
     reboot)sudo reboot ;;
     zzz)sudo zzz	;;
-    logout) i3-msg exit ;;
+    logout) pkill x ;;
     cancel) pkill dmenu ;;
     *) exit 1 ;;
 esac
