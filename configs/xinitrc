@@ -1,6 +1,5 @@
-#exec i3
-# dunst &
+dunst &
 picom -b &
 dwmblocks &
-feh --bg-fill ~/Wallpapers/eink_dark.jpg &
+feh --bg-fill ~/Wallpapers/wallpaper.png &
 exec dwm
